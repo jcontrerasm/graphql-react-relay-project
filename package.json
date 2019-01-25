@@ -7,7 +7,7 @@
     "build-client": "webpack --mode production --colors --progress",
     "start-server-client": "webpack-dev-server --colors --progress --mode development --open",
     "start-client": "yarn build-client && yarn start-server-client",
-    "serverHttp": "node --require 'babel-register' src/serverHttp.js"
+    "serverHttp": "node --require 'babel-register' src/server/serverHttp.js"
   },
   "author": "Juan Contreras <jcontrerasmeneses@gmail.com>",
   "license": "MIT",
