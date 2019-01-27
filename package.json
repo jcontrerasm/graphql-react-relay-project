@@ -2,10 +2,10 @@
   "name": "graphql-react-relay-project",
   "version": "1.0.0",
   "description": "Implementación básica de graphql con react y relay",
-  "main": "/src/serverHttp.js",
+  "main": "/src/server/serverHttp.js",
   "scripts": {
     "build-client": "webpack --mode production --colors --progress",
-    "start-server-client": "webpack-dev-server --colors --progress --mode development --open",
+    "start-server-client": "webpack-dev-server --mode development --open --colors --progress",
     "start-client": "yarn build-client && yarn start-server-client",
     "serverHttp": "node --require 'babel-register' src/server/serverHttp.js"
   },
@@ -13,9 +13,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edgecoders/learning-graphql-and-relay.git"
+    "url": "git+https://github.com/jcontrerasm/graphql-react-relay-project"
   },
-  "homepage": "https://github.com/edgecoders/learning-graphql-and-relay#readme",
+  "homepage": "https://github.com/jcontrerasm/graphql-react-relay-project#readme",
   "devDependencies": {
     "awesome-typescript-loader": "5.2.1",
     "babel": "6.23.0",
