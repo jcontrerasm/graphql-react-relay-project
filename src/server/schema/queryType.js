@@ -16,5 +16,3 @@ export const queryType = new GraphQLObjectType({
     }
   }
 });
-queryType
-queryTypequeryType

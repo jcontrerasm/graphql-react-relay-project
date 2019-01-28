@@ -4,11 +4,12 @@ const webpack = require('webpack')
 
 module.exports = {
   resolve: {
-    extensions: ['.js', '.jsx', '.tsx', '.json', '.css', '.scss'],
+    extensions: ['.js', '.jsx', '.ts','.tsx', '.json', '.css', '.scss'],
     alias: {
       '@app': path.resolve(__dirname)
     }
   },
+  node: { fs: 'empty' },
   cache: true,
   entry: [
     'react-hot-loader/patch', // Activa Hot Module Reloading HMR para React
