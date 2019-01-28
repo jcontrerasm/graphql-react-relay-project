@@ -1,18 +1,12 @@
 import * as React from 'react';
 import { render } from 'react-dom';
+import { QuotesLibrary } from './containers/QuotesLibrary';
 
-interface Props {
-  greeting: string;
-}
-
-class App extends React.Component<Props, {}> {
-  static defaultProps = {
-    greeting: 'Hello'
-  };
+class App extends React.Component<{}, {}> {
   render() {
     return (
       <div>
-        {this.props.greeting} World
+        <QuotesLibrary/>
       </div>
     );
   }
