@@ -1,6 +1,5 @@
 import { GraphQLClient } from 'graphql-request';
 
-
 export class GraphqlClient {
 
   static instance: GraphQLClient;
@@ -9,7 +8,6 @@ export class GraphqlClient {
 
   static getInstance(): GraphQLClient {
     if(!this.instance) {
-      // const url: string = process.env.MONGO_URL;
       const url: string = 'http://localhost:3000/graphql';
       GraphqlClient.instance = new GraphQLClient(url)
     }
