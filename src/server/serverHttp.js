@@ -3,6 +3,7 @@ import graphqlHTTP from 'express-graphql';
 import express from 'express';
 import { MongoClient } from 'mongodb';
 import { mySchema } from './schema';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -19,7 +20,7 @@ const MONGO_CONFIG = {
 MongoClient.connect(MONGO_CONFIG.url, MONGO_CONFIG.parse, (err, client) => {
   console.log('Connected to MongoDB server');
 
-  app.use('/graphql', graphqlHTTP({
+  app.use('/graphql', cors(), graphqlHTTP({
     schema: mySchema,
     context: client,
     graphiql: true,
